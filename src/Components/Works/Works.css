@@ -77,3 +77,14 @@
         top:8rem;
 
     }
+@media screen and (max-width:480px){
+    .works{
+        display: flex;
+        flex-direction:column;
+
+    }
+    .n-mainCircle{
+        top:3rem;
+        left:0.5rem;
+    }
+}

@@ -16,15 +16,15 @@ const Navbar = () =>{
                 <div className="n-list">
                     <ul>
                         <Link spy={true} to="Navbar" smooth={true} activeClass="activeClass">
-                        <li className="list" >Home</li>
+                        <li id="list3">Home</li>
                         </Link>
-                        <Link spy={true} to="Services" smooth={true} ><li className="list">Services</li></Link>
+                        <Link spy={true} to="Services" smooth={true} ><li id="list2">Services</li></Link>
                         <Link spy={true} to="Experience" smooth={true} >
                         <li id="list1">Experience</li>
                         </Link>             
                         
-                        <li className="list">Portfolio</li>
-                        <li className="list">Testimonials</li>
+                        <li id="list4">Portfolio</li>
+                        <li id="list5">Testimonials</li>
                     </ul>
                 </div>
                 <button className="button n-button">
