@@ -5,6 +5,8 @@ import Fiverr from "../../img/fiverr.png"
 import Amazon from "../../img/amazon.png"
 import Shopify from "../../img/Shopify.png";
 import Facebook from "../../img/Facebook.png";
+import {motion} from "framer-motion"
+
 const Works=()=>{
     return (
         <div className="works">
@@ -23,7 +25,12 @@ const Works=()=>{
             </div>
             {/* right side */}
             <div className="n-right">
-                <div className="n-mainCircle">
+                <motion.div
+                initial={{rotate:45}}
+                whileInView={{rotate: 0}}
+                viewport={{margin:"-40px"}}
+                transition ={{duration: 3.5 ,type: 'spring'}}              
+                className="n-mainCircle" >
                     <div className="n-secCircle">
                         <img src={Upwork} alt="" />
                     </div>
@@ -45,7 +52,7 @@ const Works=()=>{
                         
                     </div>
                         
-                    </div>
+                    </motion.div>
                     {/* <div className="n-backCircle blueCircle"></div>
                     <div className="n-backCircle yellowCircle"></div> */}
                 </div>
