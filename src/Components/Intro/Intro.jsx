@@ -11,6 +11,7 @@ import Crown from "../../img/crown.png"
 import glassesimoji from "../../img/glassesimoji.png"
 import FloatingDiv from "../FloatingDiv/FloatingDiv"
 import {themeContext} from "../../Context";
+import HireMe from "./HireMe.pdf"
 import {motion} from "framer-motion"
 const Intro =()=>{
     const transition ={ duration :2 ,type:"spring"}
@@ -25,7 +26,8 @@ const Intro =()=>{
                 <span>CK</span>
                 <span>A frontend Developer ,enthusiast in WEB Designing and Development.</span>
              </div>
-             <button className="button i-button">Hire me</button>
+             <a href={HireMe} download>
+             <button className="button i-button">Hire me</button></a>
              <div className="i-icons"> 
              <img src={Github} alt="" />
              <img src={LinkedIn} alt="" />
