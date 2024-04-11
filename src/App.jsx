@@ -13,6 +13,7 @@ function App() {
   const theme = useContext(themeContext);
   const darkMode =theme.state.darkMode;
     return(
+      
 
     <div className ="App" style={{
       background : darkMode? 'black':"",
@@ -26,7 +27,7 @@ function App() {
     <Experience/>
     
     <Work/>
-    <Portfolio/>
+     <Portfolio/>
     <Footer/>
     </div>
   

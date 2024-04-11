@@ -12,7 +12,7 @@ const Services =()=>{
     return(
         <div className="services" id="Services">
             {/* left side */}
-            <div className="awesome">
+             <div className="awesome">
                 <span>My Awesome</span>
                 <span>Services</span>
                 <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere esse impedit, dolorem <br/>laudantium rem suscipit voluptatibus velit hic, fugit accusantium placeat, voluptas fugiat?</span>
@@ -25,42 +25,47 @@ const Services =()=>{
                 </div>
             </div>
                 {/* right side */}
+                <div id="right">
             <div className="cards">
-                <div
-                // initial={{left:"25%" }}
-                // whileInView={{left:"25rem"}}
-                
-                style={{
-                    left: "14rem"
-                }}>
+            <div className='f__card'>
                     <Card emoji={HeartEmoji}
  heading={"Design"}
  detail={"Figma, Sketh , PhotoShop,Adobe ,Adobe xd"}
                     />
                 </div>
-                {/* second card */}
-        <motion.div
-        whileInView={{left:"1rem", top:"12rem"}}
-        initial={{left: '15%'}}
-        transition={transition}
-        style ={{top: "12rem", left:"-4rem"}}>
+                 {/* second card */}
+               
+                <motion.div
+        whileInView={{left:"1rem"}}
+        initial={{left: '0%'}}
+        className='s__card'
+        transition={transition}>
             <Card 
             emoji ={Glasses}
             heading ={"Developer"}
             detail={"Html,Css,JavaScript,React"}
             />
-        </motion.div>
-        {/* 3rd Card */}
-        <div style={{ top: "23rem",left: "16rem"}}>
+                    </motion.div>
+             {/* 3rd Card */}
+        <div className='t__card' >
             <Card emoji={Humble}
             heading={"UI/UX"}
             detail={
                 'UI/UX enthusiast learning and developing new creative interfaces '
             }/>
         </div>
-        <div className="blur s-blur2" style={{background: "rgba(150,70,34,0.3)"}}></div>
+        </div>
 
-            </div>          
+            </div> 
+           
+               
+        
+
+       
+       
+
+
+        {/* <div className="blur s-blur2" style={{background: "rgba(150,70,34,0.3)"}}></div> */}
         </div>
     )
 }

@@ -1,5 +1,5 @@
 .works {
-    padding: 0 3rem 0 3rem;
+    padding: 1.5rem;
     display: flex;
     height : 90vh;
     margin-top: 4rem;
@@ -13,6 +13,7 @@
 .n-mainCircle{
     left : 9rem;
     position : relative ;
+    
     width : 18rem;
     height :18rem;
     border-radius: 100%;
@@ -85,6 +86,6 @@
     }
     .n-mainCircle{
         top:3rem;
-        left:0rem;
+        left:-2.75rem;
     }
 }

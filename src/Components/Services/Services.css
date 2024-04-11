@@ -35,12 +35,26 @@
 }
 /* blur */
 .s-blur2{
+    max-width: 100%;
     left: 14rem;
     top: 8rem;
     }
-.s-blur1{
+/* .s-blur1{
     top: 13rem ;
     left : -18rem;
+} */
+
+.f__card div{
+    left: 14rem;    
+}
+.t__card div{
+    left: 16rem;
+    top: 23rem;
+}
+
+.s__card div{
+    left: -4rem;
+    top: 12rem;
 }
 @media screen and (max-width : 480px){
     .services{
@@ -50,13 +64,38 @@
         height: 66rem;
         padding: 0;
     }
-    .cards{
+    
+    /* #cards{
+        
         display: flex;
         flex-direction: column;
-        gap: 17rem;
+        gap: 20rem;
+        justify-content: center;
 
-    }
-    .cards>*{
+
+        /* background-color: black; */
+/* 
+    } 
+    #cards>*{
         position: static;
+        /* width:max-content */
+        
+    
+     #right{
+        position: relative;
+        left: -4.2rem;
+     }
+     .f__card div{
+        left: 6rem;    
     }
+    .s__card div{
+        left: 6rem;
+        top: 20.5rem;
+    }
+    .t__card div{
+        left: 6rem;
+        top: 41rem;
+    }
+    
 }
+
